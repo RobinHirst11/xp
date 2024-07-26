@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dungeon Quest XP Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+  <div class="bubbles-container"></div>  
+  <div class="container"> 
+    <h1>Dungeon Quest XP Calculator</h1>
+
+    <label for="xpNeeded">XP Needed to Level Up:</label>
+    <input type="number" id="xpNeeded" placeholder="Enter XP">
+    <select id="xpNeededUnit">
+      <option value="billion">Billion</option>
+      <option value="trillion">Trillion</option>
+    </select>
+
+    <label for="currentXp">Current XP:</label>
+    <input type="number" id="currentXp" placeholder="Enter XP">
+    <select id="currentXpUnit">
+      <option value="billion">Billion</option>
+      <option value="trillion">Trillion</option>
+    </select>
+
+    <label for="xpPerDungeon">XP per Dungeon:</label>
+    <input type="number" id="xpPerDungeon" placeholder="Enter XP">
+    <select id="xpPerDungeonUnit">
+      <option value="billion">Billion</option>
+      <option value="trillion">Trillion</option>
+    </select>
+
+    <p>Dungeons needed: <span id="result"></span></p>
+  </div> 
+
+  <script src="script.js"></script> 
+</body>
+</html>
